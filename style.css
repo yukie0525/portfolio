@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x : hidden;
+}
+
+body{
+    font-size: 1.6rem;
+    color: #000c15;
+    background-color:#f0f8ff;
+    font-family: メイリオ, Meiryo, Osaka, “ヒラギノ角ゴ Pro W3”, “Hiragino Kaku Gothic Pro”, “ＭＳ Ｐゴシック”, “MS PGothic”, sans-serif;
+    overflow-x : hidden;
+}
+/* ヘッダーの設定 */
+header{
+    width: 100%;
+    text-align: center;
+}
+
+.top{
+    position: relative;
+    margin: 0 auto;
+}
+
+.top-title{
+    position: absolute;
+    color: white;
+    font-family: "ヒラギノ丸ゴ ProN W4";
+    font-size: 3.6rem;
+    font-weight: bold;
+    top: 40%;
+    left: 43%;
+    border-bottom: solid 1px #fff;
+}
+
+.top-image{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 5px 100px;
+    background: #ffffef;  
+    border-top: solid 10px #003f8e;
+}
+
+nav li{
+    font-size: 1.4rem;
+    flex-grow: 1;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 3px;
+}
+
+nav li+ li{
+    border-left: 0;
+    border-right: solid 1px;
+}
+
+nav li:hover{
+    color: #fff;
+    background: #d3d3d3;
+}
+
+/* メインの設定 */
+.first,
+.news,
+.tourist-spot,
+.question{
+    width: 100%;
+    margin: 30px auto 100px;
+}
+
+/* 初めてご利用の方への設定 */
+.first{
+    padding: 20px 0; 
+    background: #fff;
+}
+
+.first .item{
+    background: #003f8e;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto 20px;
+}
+
+.text{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: solid 1px;
+}
+
+.text p{
+    line-height: 50px;
+}
+
+/* 新着ツアーの設定 */
+.news section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-top: solid 1px #003f8e;
+    border-bottom: solid 1px #003f8e;
+}
+
+.item{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: "Script";
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.news article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: dotted 1px #003f8e;
+}
+
+.news article:last-child{
+    border-bottom: initial;
+}
+
+.news ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    font-size: 1.2rem;
+}
+
+.special{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+    background: #00bfff;
+    color: #fff;
+}
+
+.caption{
+    width: 62%;
+}
+
+.caption a:hover{
+    background: #94adda;
+}
+
+/* 沖縄諸島のご紹介の設定 */
+.tourist-spot .place{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.place{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recommend,
+.island{
+    margin: 20px 10px;
+    border: solid 1px #808080;
+    background: #fff;
+    box-shadow: 1px 2px 5px 1px;
+}
+
+.recommend:hover,
+.island:hover{
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+
+.recommend img,
+.island img{
+    width: 100%; 
+}
+
+.title{
+    font-family:"cursive";
+    margin: 20px 0;
+}
+
+.recommend p,
+.island p{
+    padding-top: 10px;
+    margin: 20px;
+    border-top:solid 1px #4682b4;
+    font-size: 1.6rem;     
+
+}
+
+.recommend{
+    position: relative;
+}
+
+.example{
+    position: absolute;
+    top: -8%;
+    left: -8%;
+    font-size: 2.6rem;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;  
+    color: #d9333f;
+    background: #ffb6c1;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px #202020;
+}
+
+/* おすすめのプランの設定 */
+.plan{
+    width: 80%;
+    padding: 10px 0;
+    margin: 20px auto 100px;
+}
+
+.okinawa-tour,
+.isigaki-tour,
+.miyako-tour{
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+.details{
+    width: 50%;
+    font-size: 1.8rem;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.red{
+    font-size: 2rem;
+    color: red;
+    margin-top: 50px;
+    text-align: right;
+}
+
+/* スライドの設定 */
+input[name="switch"] {
+	display: none;
+}
+
+/*　切り替えボタン */
+.tabBtn {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	margin: auto;
+    padding: 0;
+	text-align: center;
+}
+.tabBtn li {
+    flex-basis: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: "cursive";
+    background: #1e50a2;
+    letter-spacing: 3px;
+}
+.tabBtn li:not(:last-child) {
+	border-right: 1px solid white;
+}
+
+.tabBtn label {
+	display: block;
+	cursor: pointer;
+	padding: 10px 0;
+    color: white;
+}
+
+.tabBtn label::after{
+    content: "▼";
+    display: block;
+    font-size: 1rem;
+}
+
+.tabBtn label:hover {
+    background: rgba(205,92,92,.5);
+}
+
+/* スライドの中身 */
+.tour-plan article {
+    display: flex;
+    width: 100%;
+	margin: 0 auto 1px;
+    background: white;
+    box-shadow: 0 0 5px 1px;
+}
+
+.plan img {
+    width: 50%;
+    vertical-align: bottom;
+}
+
+/* スライドの対応 */
+.tour-plan article {
+	opacity: .1;
+}
+.tour-plan article {
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tabBtn label[for="tab-1"],
+#tab-2:checked ~ .tabBtn label[for="tab-2"],
+#tab-3:checked ~ .tabBtn label[for="tab-3"]{
+	background: indianred;
+}
+#tab-1:checked ~ .tour-plan .okinawa-tour,
+#tab-2:checked ~ .tour-plan .isigaki-tour,
+#tab-3:checked ~ .tour-plan .miyako-tour{
+	opacity: 1;
+	background: white;
+}
+
+/* スライドの動き */
+.tour-plan {
+	display: flex;
+    width: 300%;
+	transition: transform .6s;
+}
+.tour-plan article {
+	opacity: .1;
+	transition: opacity .3s;
+}
+#tab-1:checked ~ .tour-plan {
+	transform: translateX(0);
+}
+#tab-2:checked ~ .tour-plan {
+	transform: translateX(-33.33%);
+}
+#tab-3:checked ~ .tour-plan {
+	transform: translateX(-66.66%);
+}
+
+/* よくあるご質問 */
+.question .last{
+    width: 80%;
+    margin: 0 auto 20px;
+    padding-bottom: 50px;
+    background: #fff;
+    border-top: solid 1px #003f8e;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.question .item{
+    background: #003f8e;
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.grad-wrap {
+    position: relative;
+}
+
+.grad-wrap + .grad-wrap {
+    margin-top: 50px;
+}
+
+.big{
+    color: red;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "cursive";  
+}
+
+.grad-item p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-top: solid 1px #a0a0a0;
+    color: #404040;
+    line-height: 20px;
+    font-size: 1.3rem;
+}
+
+.grad-btn {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    margin: auto;
+    padding: .5em 0;
+    border-radius: 2px;
+    background: #a0a0a0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s ease;
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.grad-btn::after {
+    content: "続きを読む"
+}
+
+.grad-btn .fa {
+    margin-right: .5em;
+}
+
+.grad-item {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+}
+
+.grad-item p + p {
+    margin-top: 1em;
+}
+
+/* 続きを隠すようのグラデーションの設定 */
+.grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 40px;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+}
+
+/* チェックボックスは表示しない */
+.grad-trigger {
+    display: none;
+}
+
+/* チェックされていたら、ボタンを下げる */
+.grad-trigger:checked ~ .grad-btn {
+    bottom: -2em;
+}
+
+/* チェックされていたら、閉じるに変更する */
+.grad-trigger:checked ~ .grad-btn::after {
+    content: "閉じる"
+}
+
+/* チェックされていたら、高さを戻す */
+.grad-trigger:checked ~ .grad-item {
+    height: auto;
+}
+  
+/* チェックされていたら、グラデーションを消す */
+.grad-trigger:checked ~ .grad-item::before {
+    display: none;
+}
+
+/* フッターの設定 */
+footer{
+    background: #add8e6;
+    border-top: solid 10px #003f8e;
+    text-align: center;
+}
+
+.tel{
+    font-size: 2rem;
+    background: #fff;
+    font-family: "cursive";
+}
+
+.footer-menu li{
+   padding: 5px 0;
+}
+
+@media screen and (max-width:639px) {
+    /*スマホ用のcssを記述*/
+
+    .top-title{
+        font-size: 1.6rem;
+    }
+
+    /* メニューの設定 */
+    nav li,
+    nav li + li{
+        font-size: 1.8rem;
+        border: initial;
+    }
+      
+    .menu-container .menu {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    .menu-container .menu .menu-item {
+        flex: 1;
+    }
+      
+    .menu-container .menu .menu-item a {
+        background: #fff;
+        border: solid 1px #b0c4de;
+        color: #333;
+        display: block;
+        padding: 0.4em 0.4em;
+        text-align: center;
+        text-decoration: none;
+    }
+      
+    .menu-container .menu .menu-item a:hover {
+        background: #ccc;
+        color: #ffffff;
+    }
+ 
+    .menu-container .menu {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .menu-container .menu .menu-item {
+        flex: auto;
+        width: 33.3%;
+    }
+
+    .first, .news, .tourist-spot, .question{
+        margin: 30px auto 50px;
+    }
+
+    /* 初めての方へ */
+    .first .item{
+        width: 80%;
+    }
+
+    .text{
+        width: 70%;
+        font-size: 1.6rem;
+        border: initial;
+    }
+
+    .text p {
+        line-height: 3rem;
+    }
+        
+    /* 新着ツアー */
+    .news article,
+    .tourist-spot .place{
+        display: initial;
+    }
+
+    .news ul{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .caption{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+
+    /* 沖縄諸島のご紹介 */
+    .tourist-spot{
+        width: 88%;
+    }
+
+    /* おすすめプラン */
+    .tour-plan article{
+        display: initial;
+    }
+
+    .plan img {
+        width: 100%;
+    }
+
+    .details{
+        width: 100%;
+        padding: initial;
+    }
+
+    .red {
+        margin: 10px;
+    }
+
+    /* よくあるご質問 */
+    .question .last,
+    .question .item{
+        width: 80%;
+    }
+
+    .grad-wrap + .grad-wrap {
+            margin-top: 30px;
+    }
+    }

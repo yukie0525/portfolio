@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html la="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- ビューポートの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沖縄諸島ツアー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ここからヘッダー -->
+    <header>
+        <div class="top">
+            <img class="top-image" src="img/シーサー2.jpeg" alt="シーサーの写真" >
+            <div class="top-title">
+                <p>沖縄諸島ツアーのご案内</p>
+            </div>
+        </div>
+        <nav class="menu-container">  
+            <ul class="menu">
+                <li class="menu-item"><a href="#menu1">初めてご利用の方へ</a></li>
+                <li class="menu-item"><a href="#menu2">新着ツアー</a></li>
+                <li class="menu-item"><a href="#menu3">沖縄諸島のご紹介</a></li>
+                <li class="menu-item"><a href="#menu4">おすすめプラン</a></li>
+                <li class="menu-item"><a href="#menu5">よくあるご質問</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ここからメイン -->
+    <main>
+        <article class="main">
+            <!-- 初めてご利用の方への設定  -->
+            <div class="first">
+                <div class="item">
+                    <h2><a id="menu1">初めてご利用の方へ</a></h2>
+                </div>
+                <div class="text">
+                    <p>こちらでは沖縄県専門とした旅行のご提案を行っております。<br>
+                        旅行を通して、素敵なお時間をご提供できるようサポート致します。<br>
+                        何か気になる点がございましたら、遠慮なくお申し付けください。<br>
+                    </p>
+                </div>
+            </div>
+            <!-- お知らせ -->
+            <div class="news">
+                <div class="item">
+                    <h2><a id="menu2">新着ツアー</a></h2>
+                </div>
+                <section>
+                    <article>
+                        <ul>
+                            <li>2020.02.01</li>
+                            <li class="special">航空券＋レンタカー付</li>
+                        </ul>
+                        <div class="caption">
+                        <p><a href="#menu4">初めての沖縄旅行ならこれで決まり！
+                            レンタカー・美ら海水族館割引券付き！沖縄本島5日間</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>2020.01.31</li>
+                            <li class="special">航空券＋ホテル付</li>
+                        </ul>
+                        <div class="caption">
+                        <p><a href="#menu4">離島観光を楽しみたいあなたに！
+                            竹富島往復フェリー乗船券付き！石垣島３日間</a></p>
+                        </div>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>2020.01.30</li>
+                            <li class="special">航空券＋ホテル付</li>
+                        </ul>
+                        <div class="caption">
+                        <p><a href="#menu4">マリンスポーツで夏の思い出作りませんか？
+                            ダイビング体験ツアー付き！宮古島３日間</a></p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <!-- 沖縄諸島のご紹介 -->
+            <div class="tourist-spot">
+                <div class="item">
+                    <h2><a id="menu3">沖縄諸島のご紹介</a></h2>
+                </div>
+                <div class="place">
+                <section class="recommend">
+                    <img src="img/okinawa.jpeg" alt="沖縄本島の写真">
+                    <div class="title">
+                        <h3>沖縄本島</h3>
+                    </div>
+                    <p>青い海と白砂ビーチが眩しい沖縄諸島。<br>
+                        初めての沖縄ならまずは沖縄本島へ！</p>
+                    <div class="example">
+                        <span>定番</span>
+                    </div>
+                </section>
+                <section class="island">
+                    <img src="img/isigaki1.jpg" alt="石垣島の写真">
+                    <div class="title">
+                        <h3>石垣島</h3>
+                    </div>
+                    <p>沖縄本島よりも温暖な石垣島。<br>
+                        透明度の高い海などたくさんの魅力に溢れています！</p>
+                </section>
+                <section class="island">
+                    <img src="img/miyako1.jpg" alt="宮古島の写真">
+                    <div class="title">
+                        <h3>宮古島</h3>
+                    </div>
+                    <p>沖縄県の中でも屈指の海の美しさを誇る宮古島。<br>
+                        自然を満喫したい方におすすめ！</p>
+                </section>
+                </div>
+            </div>
+            <!-- おすすめのプラン -->
+            <div class="plan">
+                <div class="item">
+                    <h2><a id="menu4">おすすめプラン</a></h2>
+                </div>
+                <!-- ボタン -->
+                <input type="radio" name="switch" id="tab-1" checked>
+                <input type="radio" name="switch" id="tab-2">
+                <input type="radio" name="switch" id="tab-3">
+                <ul class="tabBtn">
+                    <li><label for="tab-1">沖縄本島</label></li>
+                    <li><label for="tab-2">石垣島</label></li>
+                    <li><label for="tab-3">宮古島</label></li>
+                </ul>
+                <!-- プラン内容 -->
+             <section class="tour-plan">
+                <article class="okinawa-tour">
+                    <img src="img/okinawa-plan.jpg" alt="沖縄本島の写真">
+                    <div class="details">
+                        <p>初めての沖縄旅行ならこれで決まり！</p>
+                        <p>レンタカー・美ら海水族館割引券付き！沖縄本島３日間</p>
+                        <p class="red">40,000円〜80,000円</p>
+                    </div>
+                </article>
+                <article class="isigaki-tour">
+                    <img src="img/isigaki-plan.jpg" alt="石垣島の写真">
+                    <div class="details">
+                        <p>離島観光を楽しみたいあなたへ！</p>
+                        <p>竹富島往復フェリー乗船券付き！石垣島３日間</p>
+                        <p class="red">40,000円〜80,000円</p>
+                    </div>
+                </article>
+                <article class="miyako-tour">
+                    <img src="img/miyako-plan.jpg" alt="宮古島の写真">
+                    <div class="details">
+                        <p>マリンスポーツで夏の思い出作りませんか？</p>
+                        <p>ダイビング体験コース付き！宮古島３日間</p>                            <p class="red">40,000円〜80,000円</p>
+                    </div>
+                </article>
+            </section>
+            </div>
+            <!-- よくあるご質問 -->
+            <div class="question">
+                <div class="item">
+                    <h2><a id="menu5">よくあるご質問</a></h2>
+                </div>
+                <section>
+                    <div class="last">
+                    <div class="grad-wrap">
+                        <input id="trigger1" class="grad-trigger" type="checkbox">
+                        <label class="grad-btn" for="trigger1"></label>
+                            <p class="big">予約内容の変更・確認について</p>
+                        <div class="grad-item">
+                            <p>■ご予約内容の確認方法<br>
+                                予約確定後、ご登録メールアドレスへ送信されるマイページにてご確認が可能です。マイページのご確認にはご登録時に設定したログインID・パスワードが必要となります。
+                                ログインID・パスワードをお忘れになった場合は、下記お問い合せセンターまでご連絡ください。<br>
+                                お問い合わせ先：000-0000<br>
+                                ■ご予約内容の変更方法<br>
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                </p>
+                        </div>
+                    </div>
+                    <div class="grad-wrap">
+                        <input id="trigger2" class="grad-trigger" type="checkbox">
+                        <label class="grad-btn" for="trigger2"></label>
+                            <p class="big">キャンセル料金について</p>
+                        <div class="grad-item">
+                            <p>■開催30日前のツアーのキャンセル<br>
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grad-wrap">
+                        <input id="trigger3" class="grad-trigger" type="checkbox">
+                        <label class="grad-btn" for="trigger3"></label>
+                            <p class="big">自然災害発生時のツアー中止について</p>
+                        <div class="grad-item">
+                            <p>■自然災害発生時の対応<br>
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                </p>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+    </main>
+    <!-- ここからフッター -->
+    <footer>
+        <div class="footer">
+            <div class="tel">
+                <p>お問い合わせセンター:TEL 123-4567</p>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><p>【営業時間】<br>
+                        10:00〜17:00</p></li>
+                    <li><p>【所在地】<br>
+                        〒123-4567 東京都港区0番町-0</p></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -30,7 +30,7 @@ header{
     position: absolute;
     color: white;
     font-family: "ヒラギノ丸ゴ ProN W4";
-    font-size: 3.6rem;
+    font-size: 1.8rem;
     font-weight: bold;
     top: 40%;
     left: 43%;
@@ -493,7 +493,7 @@ footer{
     /*スマホ用のcssを記述*/
 
     .top-title{
-        font-size: 1.6rem;
+        font-size: 0.8rem;
     }
 
     /* メニューの設定 */

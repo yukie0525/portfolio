@@ -294,7 +294,7 @@ input[name="switch"] {
 }
 
 .tabBtn label:hover {
-    background: rgba(205,92,92,.5);
+    background: rgba(199, 49, 49, 0.5);
 }
 
 /* スライドの中身 */
@@ -380,7 +380,7 @@ input[name="switch"] {
 }
 
 .big{
-    color: red;
+    color: #8b0000;
     font-weight: bold;
     font-size: 1.8rem;
     text-align: center;

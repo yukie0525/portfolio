@@ -321,7 +321,7 @@ input[name="switch"] {
 #tab-1:checked ~ .tabBtn label[for="tab-1"],
 #tab-2:checked ~ .tabBtn label[for="tab-2"],
 #tab-3:checked ~ .tabBtn label[for="tab-3"]{
-	background: indianred;
+	background: #db4949;
 }
 #tab-1:checked ~ .tour-plan .okinawa-tour,
 #tab-2:checked ~ .tour-plan .isigaki-tour,

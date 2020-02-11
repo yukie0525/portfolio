@@ -2,14 +2,13 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <!-- ビューポートの設定 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="沖縄諸島のツアーを取扱うウェブサイトです。沖縄本島・石垣島・宮古島へのご旅行をお考えの方はぜひご覧ください。">
     <title>沖縄諸島ツアーのご案内</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- ここからヘッダー -->
+    <!-- ヘッダー -->
     <header>
         <div class="top">
             <img class="top-image" src="img/シーサー2.jpeg" alt="シーサーの写真" >
@@ -27,11 +26,10 @@
             </ul>
         </nav>
     </header>
-    <!-- ここからメイン -->
+    <!-- メイン -->
     <main>
-        <article class="main">
-            <!-- 初めてご利用の方への設定  -->
-            <div class="first">
+        <!-- 初めてご利用の方へ  -->
+            <section class="first">
                 <div class="item">
                     <h2><a id="menu1">初めてご利用の方へ</a></h2>
                 </div>
@@ -41,16 +39,16 @@
                         何か気になる点がございましたら、遠慮なくお申し付けください。<br>
                     </p>
                 </div>
-            </div>
-            <!-- お知らせ -->
-            <div class="news">
+            </section>
+        <!-- お知らせ -->
+            <section class="news">
                 <div class="item">
                     <h2><a id="menu2">新着ツアー</a></h2>
                 </div>
                 <section>
                     <article>
                         <ul>
-                            <li>2020.02.01</li>
+                            <li><time>2020.02.01</time></li>
                             <li class="special">航空券＋レンタカー付</li>
                         </ul>
                         <div class="caption">
@@ -60,7 +58,7 @@
                     </article>
                     <article>
                         <ul>
-                            <li>2020.01.31</li>
+                            <li><time>2020.01.31</time></li>
                             <li class="special">航空券＋ホテル付</li>
                         </ul>
                         <div class="caption">
@@ -70,7 +68,7 @@
                     </article>
                     <article>
                         <ul>
-                            <li>2020.01.30</li>
+                            <li><time>2020.01.30</time></li>
                             <li class="special">航空券＋ホテル付</li>
                         </ul>
                         <div class="caption">
@@ -79,9 +77,9 @@
                         </div>
                     </article>
                 </section>
-            </div>
-            <!-- 沖縄諸島のご紹介 -->
-            <div class="tourist-spot">
+            </section>
+        <!-- 沖縄諸島のご紹介 -->
+            <section class="tourist-spot">
                 <div class="item">
                     <h2><a id="menu3">沖縄諸島のご紹介</a></h2>
                 </div>
@@ -114,9 +112,9 @@
                         自然を満喫したい方におすすめ！</p>
                 </section>
                 </div>
-            </div>
-            <!-- おすすめのプラン -->
-            <div class="plan">
+            </section>
+        <!-- おすすめのプラン -->
+            <section class="plan">
                 <div class="item">
                     <h2><a id="menu4">おすすめプラン</a></h2>
                 </div>
@@ -130,91 +128,86 @@
                     <li><label for="tab-3">宮古島</label></li>
                 </ul>
                 <!-- プラン内容 -->
-             <section class="tour-plan">
-                <article class="okinawa-tour">
-                    <img src="img/okinawa-plan.jpg" alt="沖縄本島の写真">
-                    <div class="details">
-                        <p>初めての沖縄旅行ならこれで決まり！</p>
-                        <p>レンタカー・美ら海水族館割引券付き！沖縄本島３日間</p>
-                        <p class="red">40,000円〜80,000円</p>
-                    </div>
-                </article>
-                <article class="isigaki-tour">
-                    <img src="img/isigaki-plan.jpg" alt="石垣島の写真">
-                    <div class="details">
-                        <p>離島観光を楽しみたいあなたへ！</p>
-                        <p>竹富島往復フェリー乗船券付き！石垣島３日間</p>
-                        <p class="red">40,000円〜80,000円</p>
-                    </div>
-                </article>
-                <article class="miyako-tour">
-                    <img src="img/miyako-plan.jpg" alt="宮古島の写真">
-                    <div class="details">
-                        <p>マリンスポーツで夏の思い出作りませんか？</p>
-                        <p>ダイビング体験コース付き！宮古島３日間</p>                            
-                        <p class="red">40,000円〜80,000円</p>
-                    </div>
-                </article>
+                <section class="tour-plan">
+                    <article class="okinawa-tour">
+                        <img src="img/okinawa-plan.jpg" alt="沖縄本島の写真">
+                        <div class="details">
+                            <p>初めての沖縄旅行ならこれで決まり！</p>
+                            <p>レンタカー・美ら海水族館割引券付き！沖縄本島３日間</p>
+                            <p class="red">40,000円〜80,000円</p>
+                        </div>
+                    </article>
+                    <article class="isigaki-tour">
+                        <img src="img/isigaki-plan.jpg" alt="石垣島の写真">
+                        <div class="details">
+                            <p>離島観光を楽しみたいあなたへ！</p>
+                            <p>竹富島往復フェリー乗船券付き！石垣島３日間</p>
+                            <p class="red">40,000円〜80,000円</p>
+                        </div>
+                    </article>
+                    <article class="miyako-tour">
+                        <img src="img/miyako-plan.jpg" alt="宮古島の写真">
+                        <div class="details">
+                            <p>マリンスポーツで夏の思い出作りませんか？</p>
+                            <p>ダイビング体験コース付き！宮古島３日間</p>                            
+                            <p class="red">40,000円〜80,000円</p>
+                        </div>
+                    </article>
+                </section>
             </section>
-            </div>
-            <!-- よくあるご質問 -->
-            <div class="question">
+        <!-- よくあるご質問 -->
+            <section class="question">
                 <div class="item">
                     <h2><a id="menu5">よくあるご質問</a></h2>
                 </div>
                 <section>
                     <div class="last">
-                    <div class="grad-wrap">
-                        <input id="trigger1" class="grad-trigger" type="checkbox">
-                        <label class="grad-btn" for="trigger1"></label>
+                        <div class="grad-wrap">
+                            <input id="trigger1" class="grad-trigger" type="checkbox">
+                            <label class="grad-btn" for="trigger1"></label>
                             <p class="big">予約内容の変更・確認について</p>
-                        <div class="grad-item">
-                            <p>■ご予約内容の確認方法<br>
-                                予約確定後、ご登録メールアドレスへ送信されるマイページにてご確認が可能です。マイページのご確認にはご登録時に設定したログインID・パスワードが必要となります。
-                                ログインID・パスワードをお忘れになった場合は、下記お問い合せセンターまでご連絡ください。<br>
-                                お問い合わせ先：000-0000<br>
-                                ■ご予約内容の変更方法<br>
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                </p>
+                            <div class="grad-item">
+                                <p>■ご予約内容の確認方法<br>
+                                    予約確定後、ご登録メールアドレスへ送信されるマイページにてご確認が可能です。
+                                    マイページのご確認にはご登録時に設定したログインID・パスワードが必要となります。
+                                    ログインID・パスワードをお忘れになった場合は、下記お問い合せセンターまでご連絡ください。<br>
+                                    お問い合わせ先：000-0000<br>
+                                    ■ご予約内容の変更方法<br>
+                                    開催の1ヶ月前まで予約変更が可能です。それ以降の変更はご対応しかねますのでご了承ください。
+                                    マイページにログイン後、予約内容の変更受付ページにアクセスください。
+                                    変更手順のご案内をご確認の上、記載の通りにお手続きをお願い致します。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grad-wrap">
-                        <input id="trigger2" class="grad-trigger" type="checkbox">
-                        <label class="grad-btn" for="trigger2"></label>
+                        <div class="grad-wrap">
+                            <input id="trigger2" class="grad-trigger" type="checkbox">
+                            <label class="grad-btn" for="trigger2"></label>
                             <p class="big">キャンセル料金について</p>
-                        <div class="grad-item">
-                            <p>■開催30日前のツアーのキャンセル<br>
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                            </p>
+                            <div class="grad-item">
+                                <p>■開催30日前のツアーのキャンセル<br>
+                                    ツアー開催の30日前になりますとキャンセル料金が発生致します。<br>
+                                    　・30日前　30%<br>
+                                    　・10日前　50％<br>
+                                    　・当日　100％</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="grad-wrap">
-                        <input id="trigger3" class="grad-trigger" type="checkbox">
-                        <label class="grad-btn" for="trigger3"></label>
+                        <div class="grad-wrap">
+                            <input id="trigger3" class="grad-trigger" type="checkbox">
+                            <label class="grad-btn" for="trigger3"></label>
                             <p class="big">自然災害発生時のツアー中止について</p>
-                        <div class="grad-item">
-                            <p>■自然災害発生時の対応<br>
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
-                                </p>
+                            <div class="grad-item">
+                                <p>■自然災害発生時の対応<br>
+                                    地震・台風によりツアー開催が中止となる場合がございます。
+                                    その際の返金等の対応は各種ツアー申し込み時の規程にてご案内をしております。
+                                    コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                    コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント
+                                    コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </section>
-
-            </div>
-        </article>
+            </section>
     </main>
-    <!-- ここからフッター -->
+    <!-- フッター -->
     <footer>
         <div class="footer">
             <div class="tel">
@@ -222,10 +215,8 @@
             </div>
             <div class="footer-menu">
                 <ul>
-                    <li><p>【営業時間】<br>
-                        10:00〜17:00</p></li>
-                    <li><p>【所在地】<br>
-                        〒123-4567 東京都港区0番町-0</p></li>
+                    <li><p>【営業時間】<br>平日　10:00〜17:00</p></li>
+                    <li><p>【所在地】<br>〒123-4567 東京都港区0番町-0</p></li>
                 </ul>
             </div>
         </div>

@@ -29,7 +29,7 @@ header{
 .top-title{
     position: absolute;
     color: white;
-    font-family: "ヒラギノ丸ゴ ProN W4";
+    font-family: "Script";
     font-size: 1.8rem;
     font-weight: bold;
     top: 40%;
@@ -611,7 +611,7 @@ footer{
     }
 
     @media screen and (max-width:570px) {
-    /*5s用のcssを記述*/
+    /*5用のcssを記述*/
     nav li,
     nav li + li{
         font-size: 1.6rem;
